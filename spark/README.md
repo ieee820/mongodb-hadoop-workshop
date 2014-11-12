@@ -16,14 +16,14 @@ Running the Spark application and launching the MovieWeb application can be done
 
 1. Install Python requirements:
 
-    cd ../movieweb
-    pip install -r requirements.txt
+        cd ../movieweb
+        pip install -r requirements.txt
 
 2. Start up a `mongod`:
 
-    mkdir scratch
-    mongod --dbpath scratch --logpath scratch/mongodb.log --fork
+        mkdir scratch
+        mongod --dbpath scratch --logpath scratch/mongodb.log --fork
 
 3. Run the launch script:
 
-    bash launch.sh
+        bash launch.sh
