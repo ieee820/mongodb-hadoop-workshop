@@ -12,9 +12,18 @@
 
 ## Running
 
-    $ /path/to/spark/bin/spark-submit --master local \
-    --driver-memory 2G --executor-memory 2G \
-    --class com.mongodb.workshop.SparkExercise target/spark-1.0-SNAPSHOT.jar \
-    --jars target/lib/mongo-hadoop-core-1.3.0.jar,target/lib/mongo-java-driver-2.12.3.jar \
-    mongodb://127.0.0.1:27017/movielens predictions
+Running the Spark application and launching the MovieWeb application can be done as follows:
 
+1. Install Python requirements:
+
+    cd ../movieweb
+    pip install -r requirements.txt
+
+2. Start up a `mongod`:
+
+    mkdir scratch
+    mongod --dbpath scratch --logpath scratch/mongodb.log --fork
+
+3. Run the launch script:
+
+    bash launch.sh
